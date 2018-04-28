@@ -1,0 +1,8 @@
+.container-welcome {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../media/interactive-tree.jpg");
+    background-size: cover;
+    height: 100%;
+  }
