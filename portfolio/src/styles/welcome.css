@@ -11,8 +11,6 @@
 h1, h3 {
     color: #fff;
     font-weight: lighter;
-}
-
-[class*="ButtonBases-"] button {
-    width: 33.33%;
+    margin: 0;
+    padding: 5%;
 }
