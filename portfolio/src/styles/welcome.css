@@ -5,4 +5,14 @@
     background-image: url("../media/interactive-tree.jpg");
     background-size: cover;
     height: 100%;
-  }
+}
+
+
+h1, h3 {
+    color: #fff;
+    font-weight: lighter;
+}
+
+[class*="ButtonBases-"] button {
+    width: 33.33%;
+}
