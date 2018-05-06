@@ -1,0 +1,28 @@
+.no-project {
+    color: #fff;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.content-project {
+    margin: 5%;
+    color: #fff;
+    text-align: justify;
+}
+
+.content-project h1 {
+    text-align: center;
+}
+
+.content-project .row {
+    margin-bottom: 5%;
+}
+
+.container-project-details h3 > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-to-portfolio {
+    text-decoration: underline;
+}

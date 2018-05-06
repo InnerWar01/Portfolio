@@ -2,22 +2,19 @@ import React, { Component } from 'react';
 import './App.css';
 import { Route } from 'react-router-dom';
 import Welcome from './welcome';
+import ProjectDetails from './project-details';
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      title: 'Portfolio',
-      authorName: 'Patricia Ciobanu',
-    }
-  }
-
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <h3 className="App-title">{this.state.title} / {this.state.authorName}</h3>
           <Route exact path="/" component={Welcome}/>
+          <Route path="/projects/:projectId" render={() => <ProjectDetails/>}/> 
+
+          <footer>
+            <p>Copyright &copy; Patricia Ciobanu, 2018. All rights reserved.</p>
+          </footer>
         </header>
       </div>
     );

@@ -1,4 +1,4 @@
-body, html {
+body, html, div#root, div.App {
   height: 100%;
 }
 
@@ -7,5 +7,19 @@ body {
   background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  margin: 0;
+}
+
+.App-header {
+  height: 90%;
+}
+
+footer {
+  height: 10%;
+  color: #fff;
+  text-align: center;
+}
+
+footer p {
   margin: 0;
 }

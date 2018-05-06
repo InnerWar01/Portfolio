@@ -91,6 +91,7 @@ function ButtonBases(props) {
           style={{
             width: project.width,
           }}
+          onClick={event => props.handleClickButton(event, project.id)}
         >
           <span
             className={classes.imageSrc}

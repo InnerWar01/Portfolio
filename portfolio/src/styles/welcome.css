@@ -2,15 +2,20 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    background-image: url("../media/interactive-tree.jpg");
-    background-size: cover;
     height: 100%;
 }
 
+.container-welcome > div {
+    height: 100%;
+}
 
 h1, h3 {
     color: #fff;
     font-weight: lighter;
     margin: 0;
     padding: 5%;
+}
+
+[class*="ButtonBases"] {
+    margin-top: 10%;
 }

@@ -3,3 +3,17 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.row.header {
+  color: #fff;
+  width: 100%;
+}
+
+.row.header i {
+  float: right;
+  margin: 10%;
+}
+
+.row.header a {
+  color: #fff;
+}
