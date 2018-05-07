@@ -14,6 +14,13 @@ body {
   margin: 10%;
 }
 
-.row.header a {
+.row.header .portfolio-menu {
+  width: 100%;
+  height: 100%;
+}
+
+.row.header button {
+  float: right;
+  margin-top: 5%;
   color: #fff;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { modelInstance } from '../model/model';
 import { Row, Col } from 'react-flexbox-grid';
+import PortfolioMenu from '../components/portfolio-menu';
 
 class LinkToPortfolio extends React.Component {
     constructor(props){
@@ -36,6 +37,11 @@ class LinkToPortfolio extends React.Component {
                             </Link> / {modelInstance.getProjectTitleById(this.state.page)}
                     </h3>
                 break;
+            case 4:
+                link = <h3> <Link to="/">
+                                <span className="link-to-portfolio">Portfolio</span>
+                            </Link> / About me </h3>
+                break;
             default:
                 link = <h3> <Link to="/">
                                 <span className="link-to-portfolio">Portfolio</span>
@@ -50,9 +56,7 @@ class LinkToPortfolio extends React.Component {
                     {link}
                 </Col>
                 <Col xs={4} sm={4} md={4}>
-                    <a href="https://github.com/InnerWar01/" className="link-to-github">
-                        <i className="fab fa-github fa-2x"></i>
-                    </a>    
+                    <PortfolioMenu/>
                 </Col>
             </Row>
         );

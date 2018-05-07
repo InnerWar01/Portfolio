@@ -1,0 +1,22 @@
+.container-about h3 > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-about {
+    height: 90%;
+}
+
+.container-about > div {
+    height: 100%;
+}
+
+.content-about > .row {
+    width: 100%;
+    text-align: justify;
+    color: #fff;
+}
+
+.content-about {
+    margin: 10%;
+}

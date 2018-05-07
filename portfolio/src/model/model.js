@@ -1,8 +1,8 @@
 const Model = function () {
     let projectsMedia = {"data": [
-        {"id":1, "url":"../media/interactive-tree.jpg", "title": "The Tree Of Knowledge", "width": "33.33%"},
-        {"id":2, "url":"../media/lumobok.jpg", "title": "Lumobok", "width": "33.33%"},
-        {"id":3, "url":"../media/synkromalogo.png", "title": "Synkroma", "width": "33.33%"},
+        {"id":1, "url":"../img/interactive-tree.jpg", "title": "The Tree Of Knowledge", "width": "33.33%"},
+        {"id":2, "url":"../img/lumobok.jpg", "title": "Lumobok", "width": "33.33%"},
+        {"id":3, "url":"../img/synkromalogo.png", "title": "Synkroma", "width": "33.33%"},
     ]};
 
     this.getProjectsMedia = () => {
