@@ -77,12 +77,33 @@ const styles = theme => ({
   },
 });
 
+const projectsMedia = [
+  {
+    id: 1,
+    url: require('../img/interactive-tree-1.jpg'),
+    title: 'The Tree Of Knowledge',
+    width: '33.33%',
+  },
+  {
+    id: 2,
+    url: require('../img/lumobok.jpg'),
+    title: 'Lumobok',
+    width: '33.33%',
+  },
+  {
+    id: 3,
+    url: require('../img/synkroma1.jpg'),
+    title: 'Synkroma',
+    width: '33.33%',
+  },
+];
+
 function ButtonBases(props) {
   const { classes } = props;
 
   return (
     <div className={classes.root}>
-      {props.projectsMedia.map(project => (
+      {projectsMedia.map(project => (
         <ButtonBase
           focusRipple
           key={project.title}

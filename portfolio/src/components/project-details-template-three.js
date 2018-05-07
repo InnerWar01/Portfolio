@@ -10,7 +10,7 @@ class ProjectDetailsTemplateThree extends React.Component {
                 <h1>Synkroma</h1>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src="../img/synkromalogo.jpg" alt="Synkroma"/>
+                        <img src={require('../img/synkromalogo.png')} alt="Synkroma"/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -33,12 +33,12 @@ class ProjectDetailsTemplateThree extends React.Component {
                         </p>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
-                        <img src="../img/synkroma1.jpg" alt="Synkroma"/>
+                        <img src={require('../img/synkroma1.jpg')} alt="Synkroma"/>
                     </Col>
                 </Row>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src="../img/synkroma2.jpg" alt="Synkroma"/>
+                        <img src={require('../img/synkroma2.jpg')} alt="Synkroma"/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -50,8 +50,8 @@ class ProjectDetailsTemplateThree extends React.Component {
                 <div className="project-video">
                     <Player
                         playsInline
-                        poster="../img/synkroma3.jpg"
-                        src="../videos/Synkroma_Final.mp4"
+                        poster={require('../img/synkroma3.jpg')}
+                        src={require('../videos/Synkroma_Final.mp4')}
                     />
                 </div>
             </div>

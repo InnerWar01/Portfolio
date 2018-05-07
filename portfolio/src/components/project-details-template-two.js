@@ -10,7 +10,7 @@ class ProjectDetailsTemplateTwo extends React.Component {
                 <h1>Lumobok</h1>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src="../img/lumobok.jpg" alt="Lumobok"/>
+                        <img src={require('../img/lumobok.jpg')} alt="Lumobok"/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -36,12 +36,12 @@ class ProjectDetailsTemplateTwo extends React.Component {
                         </p>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
-                        <img src="../img/lumo1.jpg" alt="Lumobok"/>
+                        <img src={require('../img/lumo1.gif')} alt="Lumobok"/>
                     </Col>
                 </Row>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src="../img/lumo4.jpg" alt="Lumobok"/>
+                        <img src={require('../img/lumo4.gif')} alt="Lumobok"/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -53,8 +53,8 @@ class ProjectDetailsTemplateTwo extends React.Component {
                 <div className="project-video">
                     <Player
                         playsInline
-                        poster="../img/lumo2.jpg"
-                        src="../videos/Lumobok.mov"
+                        poster={require('../img/lumo2.gif')}
+                        src={require('../videos/Lumobok.mov')}
                     />
                 </div>
             </div>

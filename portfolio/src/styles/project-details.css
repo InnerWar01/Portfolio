@@ -5,7 +5,7 @@
 }
 
 .content-project {
-    margin: 5%;
+    margin: 5% 20%;
     color: #fff;
     text-align: justify;
 }
@@ -16,6 +16,10 @@
 
 .content-project .row {
     margin-bottom: 5%;
+}
+
+.content-project img {
+    width: 100%;
 }
 
 .container-project-details h3 > a {

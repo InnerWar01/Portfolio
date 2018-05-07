@@ -13,8 +13,8 @@ const styles = {
     margin: 10,
   },
   bigAvatar: {
-    width: 60,
-    height: 60,
+    width: 180,
+    height: 180,
   },
 };
 
@@ -24,7 +24,7 @@ function ImageAvatar(props) {
     <div className={classes.row}>
       <Avatar
         alt="Patricia Ciobanu"
-        src="../img/avatar.jpg"
+        src={require('../img/avatar.JPG')}
         className={classNames(classes.avatar, classes.bigAvatar)}
       />
     </div>
