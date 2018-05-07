@@ -33,12 +33,12 @@ class ProjectDetailsTemplateOne extends React.Component {
                         </p>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
-                        <img src="../img/interactive-tree.jpg" alt="Interactive Tree"/>
+                        <img src="../img/interactive-tree-4.jpg" alt="Interactive Tree"/>
                     </Col>
                 </Row>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src="../img/interactive-tree-2.jpg" alt="Interactive Tree"/>
+                        <img src="../img/interactive-tree-3.jpg" alt="Interactive Tree"/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -50,7 +50,7 @@ class ProjectDetailsTemplateOne extends React.Component {
                 <div className="project-video">
                     <Player
                         playsInline
-                        poster="../img/interactive-tree.jpg"
+                        poster="../img/interactive-tree-2.jpg"
                         src="../videos/group1.mp4"
                     />
                 </div>
