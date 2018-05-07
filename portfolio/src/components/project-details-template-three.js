@@ -1,10 +1,22 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
-import { Player } from 'video-react';
-import "video-react/dist/video-react.css";
+import YouTube from 'react-youtube';
 
 class ProjectDetailsTemplateThree extends React.Component {
+    _onReady(event) {
+        // access to player in all event handlers via event.target
+        event.target.pauseVideo();
+    }
+
     render () {
+        const opts = {
+            height: '400vh',
+            width: '100%',
+            playerVars: { // https://developers.google.com/youtube/player_parameters
+              autoplay: 1
+            }
+        };
+
         return (
             <div className="content-project">
                 <h1>Synkroma</h1>
@@ -48,10 +60,10 @@ class ProjectDetailsTemplateThree extends React.Component {
                     </Col>
                 </Row>
                 <div className="project-video">
-                    <Player
-                        playsInline
-                        poster={require('../img/synkroma3.jpg')}
-                        src={require('../videos/Synkroma_Final.mp4')}
+                    <YouTube
+                        videoId="8gxsn-Kfa2M"
+                        opts={opts}
+                        onReady={this._onReady}
                     />
                 </div>
             </div>

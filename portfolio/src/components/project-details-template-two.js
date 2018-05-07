@@ -1,10 +1,22 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
-import { Player } from 'video-react';
-import "video-react/dist/video-react.css";
+import YouTube from 'react-youtube';
 
 class ProjectDetailsTemplateTwo extends React.Component {
+    _onReady(event) {
+        // access to player in all event handlers via event.target
+        event.target.pauseVideo();
+    }
+    
     render () {
+        const opts = {
+            height: '400vh',
+            width: '100%',
+            playerVars: { // https://developers.google.com/youtube/player_parameters
+              autoplay: 1
+            }
+        };
+
         return (
             <div className="content-project">
                 <h1>Lumobok</h1>
@@ -51,10 +63,10 @@ class ProjectDetailsTemplateTwo extends React.Component {
                     </Col>
                 </Row>
                 <div className="project-video">
-                    <Player
-                        playsInline
-                        poster={require('../img/lumo2.gif')}
-                        src={require('../videos/Lumobok.mov')}
+                    <YouTube
+                        videoId="wGMuoyQ7sis"
+                        opts={opts}
+                        onReady={this._onReady}
                     />
                 </div>
             </div>
