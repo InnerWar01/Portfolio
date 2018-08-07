@@ -10,13 +10,15 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <h1 id="name">Patricia Ciobanu </h1>
           <Route exact path="/" component={Welcome}/>
           <Route path="/projects/:projectId" render={() => <ProjectDetails/>}/> 
           <Route path="/about" render={() => <About/>}/>
-          <footer>
-            <p>Copyright &copy; Patricia Ciobanu, 2018. All rights reserved.</p>
-          </footer>
         </header>
+        <div style={{clear:'both'}}></div>
+        <footer>
+          <p>Copyright &copy; Patricia Ciobanu, 2018. All rights reserved.</p>
+        </footer>
       </div>
     );
   }

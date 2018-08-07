@@ -16,6 +16,55 @@ h1, h3 {
     padding: 5%;
 }
 
+h1#name {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.navbar {
+    margin: 0;
+    min-height: 0;
+    border: 0;
+    position: relative;
+    text-align: center;
+}
+
+#menu>ul {
+    margin: 0 auto;
+    float: none;
+}
+
+#menu ul {
+    margin: 10px 0;
+    padding: 0;
+}
+
+#menu>ul>li {
+    display: inline;
+}
+
+#menu ul li {
+    list-style: none;
+    margin: 0;
+    line-height: 180%;
+    padding-left: 1%;
+}
+
+#menu ul li.menu-item {
+    font-size: large;
+}
+
+#menu ul li.menu-item:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+}
+
 [class*="ButtonBases"] {
     margin-top: 5%;
 }

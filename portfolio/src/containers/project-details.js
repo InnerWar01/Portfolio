@@ -3,14 +3,13 @@ import ProjectDetailsTemplateOne from '../components/project-details-template-on
 import ProjectDetailsTemplateTwo from '../components/project-details-template-two';
 import ProjectDetailsTemplateThree from '../components/project-details-template-three';
 import BuildIcon from '../components/build-icon';
-import LinkToPortfolio from '../components/link-to-portfolio';
+import PortfolioMenu from '../components/portfolio-menu';
 
 class ProjectDetails extends React.Component {
     constructor(props){
         super(props)
         this.state = {
             projectId: this.props.projectId,
-            page: parseInt(this.props.projectId),
         }
     }
 
@@ -34,7 +33,7 @@ class ProjectDetails extends React.Component {
 
         return (
             <div>
-                <LinkToPortfolio page={this.state.page}/>
+                <PortfolioMenu/>
                 {projectTemplate}
             </div>
         );
