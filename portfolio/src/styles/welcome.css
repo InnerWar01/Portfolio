@@ -2,7 +2,6 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .container-welcome > div {
@@ -22,6 +21,11 @@ h1#name {
     padding-bottom: 0;
 }
 
+.row#welcome {
+    width: 100%;
+}
+
+/* Portfolio Menu */
 .navbar {
     margin: 0;
     min-height: 0;
@@ -60,11 +64,63 @@ h1#name {
     color: #fff;
 }
 
+#menu ul li.active {
+    color: #fff;
+}
+
 .nav>li {
     position: relative;
     display: block;
 }
 
+/*************************/
+
+/* Side Menu */
+ul.my-social-pages {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 4px;
+    top: 42%;
+    max-width: 32px;
+    list-style: none;
+}
+
+ul.my-social-pages li {
+    list-style: none;
+    margin: 10%;
+    text-align: center;
+    padding: 0;
+    line-height: 180%;
+}
+
+ul.my-social-pages li:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+/************************/
+
 [class*="ButtonBases"] {
     margin-top: 5%;
+}
+
+@media screen and (max-width: 599px) {
+    ul.my-social-pages {
+        top: 50%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    ul.my-social-pages {
+        position: relative;
+        display: inline-flex;
+        max-width: none;
+        top: 0;
+        left: 38%;
+    }
+
+    .row#welcome {
+        margin: 0;
+    }
 }

@@ -70,11 +70,18 @@
 import React from 'react';
 
 class PortfolioMenu extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+        page: this.props.page,
+    }
+  }
+
   handleRedirection = event => {
-    if (event.target.textContent === "About") {
+    if (event.target.textContent === "About" && this.state.page !== 1) {
       window.location.assign('/about');
     }
-    else if (event.target.textContent === "Projects") {
+    else if (event.target.textContent === "Projects" && this.state.page !== 0) {
       window.location.assign('/');
     }
   };
@@ -83,9 +90,9 @@ class PortfolioMenu extends React.Component {
       return (
           <div id="menu" className="navbar" role="navigation">
             <ul className="nav navbar-nav">
-              <li className="menu-item" onClick={event => this.handleRedirection(event)}>Projects</li>
+              <li className={this.state.page === 0 ? "menu-item active" : "menu-item"} onClick={event => this.handleRedirection(event)}>Projects</li>
               <li> | </li>
-              <li className="menu-item" onClick={event => this.handleRedirection(event)}>About</li>
+              <li className={this.state.page === 1 ? "menu-item active" : "menu-item"} onClick={event => this.handleRedirection(event)}>About</li>
             </ul>
           </div>
       );

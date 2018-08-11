@@ -15,7 +15,6 @@ class App extends Component {
           <Route path="/projects/:projectId" render={() => <ProjectDetails/>}/> 
           <Route path="/about" render={() => <About/>}/>
         </header>
-        <div style={{clear:'both'}}></div>
         <footer>
           <p>Copyright &copy; Patricia Ciobanu, 2018. All rights reserved.</p>
         </footer>
