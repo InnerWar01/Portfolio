@@ -10,7 +10,7 @@ class TravelAustralia extends React.Component {
                 <h1>Travel to Australia</h1>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/travel-australia1.gif')} alt="TravelAustralia"/>
+                        <img src={require('../img/travel-australia2.gif')} alt="TravelAustralia"/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -27,12 +27,12 @@ class TravelAustralia extends React.Component {
                         </p>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/travel-australia2.gif')} alt="TravelAustralia"/>
+                        <img src={require('../img/travel-australia3.gif')} alt="TravelAustralia"/>
                     </Col>
                 </Row>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/travel-australia3.gif')} alt="TravelAustralia"/>
+                        <img src={require('../img/travel-australia6.gif')} alt="TravelAustralia"/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
