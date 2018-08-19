@@ -6,11 +6,11 @@ import { withRouter } from 'react-router-dom';
 class ProjectDetails extends React.Component {
   render () {
     let {match} = this.props;
-    let id = match.params.projectId;
+    let name = match.params.projectName;
 
     return (
       <div className="container-project-details">
-        <ProjectDetailsContainer projectId={id}/>
+        <ProjectDetailsContainer projectName={name}/>
       </div>
     );
   }

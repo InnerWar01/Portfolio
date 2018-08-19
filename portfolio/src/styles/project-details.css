@@ -30,3 +30,9 @@
 .link-to-portfolio {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 767px) {
+    .container-project-details > div {
+        text-align: center;
+    }
+}

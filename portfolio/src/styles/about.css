@@ -3,10 +3,6 @@
     text-decoration: none;
 }
 
-.container-about {
-    height: 90%;
-}
-
 .container-about > div {
     height: 100%;
 }
@@ -18,7 +14,11 @@
 }
 
 .content-about {
-    margin: 10%;
+    margin: 5% 10%;
+}
+
+p#about-text {
+    padding: 0 5%;
 }
 
 [class*="MuiAvatar-"] img {
@@ -27,4 +27,10 @@
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+@media screen and (max-width: 767px) {
+    .container-about > div {
+        text-align: center;
+    }
 }

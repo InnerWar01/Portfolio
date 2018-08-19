@@ -12,10 +12,9 @@ class App extends Component {
         <header className="App-header">
           <h1 id="name">Patricia Ciobanu </h1>
           <Route exact path="/" component={Welcome}/>
-          <Route path="/projects/:projectId" render={() => <ProjectDetails/>}/> 
+          <Route path="/projects/:projectName" render={() => <ProjectDetails/>}/> 
           <Route path="/about" render={() => <About/>}/>
         </header>
-        <div style={{clear:'both'}}></div>
         <footer>
           <p>Copyright &copy; Patricia Ciobanu, 2018. All rights reserved.</p>
         </footer>

@@ -1,30 +1,43 @@
 import React from 'react';
-import ProjectDetailsTemplateOne from '../components/project-details-template-one';
-import ProjectDetailsTemplateTwo from '../components/project-details-template-two';
-import ProjectDetailsTemplateThree from '../components/project-details-template-three';
+import InteractiveTree from '../components/interactive-tree';
+import Lumobok from '../components/lumobok';
+import Synkroma from '../components/synkroma';
+import Sentify from '../components/sentify';
+import PANC from '../components/panc';
+import TravelAustralia from '../components/travel-australia';
 import BuildIcon from '../components/build-icon';
 import PortfolioMenu from '../components/portfolio-menu';
+import SideMenu from '../components/side-menu';
 
 class ProjectDetails extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            projectId: this.props.projectId,
+            projectName: this.props.projectName,
         }
     }
 
     render () {
         let projectTemplate = null;
 
-        switch (this.state.projectId) {
-            case "1":
-                projectTemplate = <ProjectDetailsTemplateOne/>
+        switch (this.state.projectName) {
+            case "interactive-tree":
+                projectTemplate = <InteractiveTree/>
                 break;
-            case "2":
-                projectTemplate = <ProjectDetailsTemplateTwo/>
+            case "lumobok":
+                projectTemplate = <Lumobok/>
                 break;
-            case "3":
-                projectTemplate = <ProjectDetailsTemplateThree/>
+            case "synkroma":
+                projectTemplate = <Synkroma/>
+                break;
+            case "sentify":
+                projectTemplate = <Sentify/>
+                break;
+            case "panc":
+                projectTemplate = <PANC/>
+                break;
+            case "travel-australia":
+                projectTemplate = <TravelAustralia/>
                 break;
             default:
                 projectTemplate = <div><BuildIcon/><p className="no-project">Project is under development</p></div>
@@ -34,6 +47,7 @@ class ProjectDetails extends React.Component {
         return (
             <div>
                 <PortfolioMenu/>
+                <SideMenu/>
                 {projectTemplate}
             </div>
         );

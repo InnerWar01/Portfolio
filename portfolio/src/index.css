@@ -24,3 +24,18 @@ body {
   margin-top: 5%;
   color: #fff;
 }
+
+p a {
+  font-style: italic;
+  text-decoration: none;
+}
+
+p a:visited {
+  color:#172e80;
+}
+
+*:hover {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
