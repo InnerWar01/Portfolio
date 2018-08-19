@@ -23,15 +23,12 @@ h1#name {
 
 .row#welcome {
     width: 100%;
-<<<<<<< HEAD
     margin: 0;
 }
 
 div#project-list > ul {
     margin-top: 5% !important;
     margin-bottom: 5% !important;
-=======
->>>>>>> abbaba0228d01083f0e1d43e5d1fe15456b1c02e
 }
 
 /* Portfolio Menu */
