@@ -16,7 +16,7 @@ class App extends Component {
           <Route path="/about" render={() => <About/>}/>
         </header>
         <footer>
-          <p>Copyright &copy; Patricia Ciobanu, 2018. All rights reserved.</p>
+          <p>Copyright &copy; Patricia Ciobanu, {new Date().getFullYear()}. All rights reserved.</p>
         </footer>
       </div>
     );
