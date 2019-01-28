@@ -1,16 +1,34 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
+import ImageModal from '../components/image-modal';
 
 class TravelAustralia extends React.Component {
+    state = {
+        imgModal: 'travel-australia.jpg',
+        open: false,
+        alt: 'Sentify',
+    };
+
+    handleCloseImageModal = () => {
+        this.setState({
+            open: false
+        });
+    };
+
+    handleImageModal = (event, imgName) => {
+        this.setState({
+            open: true,
+            imgModal: imgName,
+        });
+    }
 
     render () {
-
         return (
             <div className="content-project">
                 <h1>Travel to Australia</h1>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/travel-australia2.gif')} alt="TravelAustralia"/>
+                        <img src={require('../img/travel-australia2.gif')} alt="TravelAustralia" onClick={event => this.handleImageModal(event, 'travel-australia2.gif')}/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -27,12 +45,12 @@ class TravelAustralia extends React.Component {
                         </p>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/travel-australia3.gif')} alt="TravelAustralia"/>
+                        <img src={require('../img/travel-australia3.gif')} alt="TravelAustralia" onClick={event => this.handleImageModal(event, 'travel-australia3.gif')}/>
                     </Col>
                 </Row>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/travel-australia6.gif')} alt="TravelAustralia"/>
+                        <img src={require('../img/travel-australia6.gif')} alt="TravelAustralia" onClick={event => this.handleImageModal(event, 'travel-australia6.gif')}/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -52,12 +70,20 @@ class TravelAustralia extends React.Component {
                         </p>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/travel-australia5.gif')} alt="TravelAustralia"/>
+                        <img src={require('../img/travel-australia5.gif')} alt="TravelAustralia" onClick={event => this.handleImageModal(event, 'travel-australia5.gif')}/>
                     </Col>
                 </Row>
                 <div>
-                    <img src={require('../img/travel-australia4.gif')} alt="TravelAustralia"/>
+                    <img src={require('../img/travel-australia4.gif')} alt="TravelAustralia" onClick={event => this.handleImageModal(event, 'travel-australia4.gif')}/>
                 </div>
+
+                {/* Image Modal */}
+                <ImageModal 
+                    img={this.state.imgModal}
+                    alt={this.state.alt}
+                    open={this.state.open}
+                    handleClose={this.handleCloseImageModal}
+                />
             </div>
         );
     }

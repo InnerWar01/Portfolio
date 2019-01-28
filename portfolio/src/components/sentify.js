@@ -1,16 +1,35 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
+import ImageModal from '../components/image-modal';
 
 class Sentify extends React.Component {
 
-    render () {
+    state = {
+        imgModal: 'sentify.png',
+        open: false,
+        alt: 'Sentify',
+    };
 
+    handleCloseImageModal = () => {
+        this.setState({
+            open: false
+        });
+    };
+
+    handleImageModal = (event, imgName) => {
+        this.setState({
+            open: true,
+            imgModal: imgName,
+        });
+    }
+
+    render () {
         return (
             <div className="content-project">
                 <h1>Sentify</h1>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/sentify1.gif')} alt="Sentify"/>
+                        <img src={require('../img/sentify1.gif')} alt="Sentify" onClick={event => this.handleImageModal(event, 'sentify1.gif')}/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -32,12 +51,12 @@ class Sentify extends React.Component {
                         </p>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/sentify2.gif')} alt="Sentify"/>
+                        <img src={require('../img/sentify2.gif')} alt="Sentify" onClick={event => this.handleImageModal(event, 'sentify2.gif')}/>
                     </Col>
                 </Row>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/sentify3.gif')} alt="Sentify"/>
+                        <img src={require('../img/sentify3.gif')} alt="Sentify" onClick={event => this.handleImageModal(event, 'sentify3.gif')}/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -64,9 +83,17 @@ class Sentify extends React.Component {
                         </p>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/sentify4.gif')} alt="Sentify"/>
+                        <img src={require('../img/sentify4.gif')} alt="Sentify" onClick={event => this.handleImageModal(event, 'sentify4.gif')}/>
                     </Col>
                 </Row>
+
+                {/* Image Modal */}
+                <ImageModal 
+                    img={this.state.imgModal}
+                    alt={this.state.alt}
+                    open={this.state.open}
+                    handleClose={this.handleCloseImageModal}
+                />
             </div>
         );
     }

@@ -1,16 +1,34 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
+import ImageModal from '../components/image-modal';
 
 class PANC extends React.Component {
+    state = {
+        imgModal: 'panc.jpg',
+        open: false,
+        alt: 'Sentify',
+    };
+
+    handleCloseImageModal = () => {
+        this.setState({
+            open: false
+        });
+    };
+
+    handleImageModal = (event, imgName) => {
+        this.setState({
+            open: true,
+            imgModal: imgName,
+        });
+    }
 
     render () {
-
         return (
             <div className="content-project">
                 <h1>PANC</h1>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/panc1.gif')} alt="PANC"/>
+                        <img src={require('../img/panc1.gif')} alt="PANC" onClick={event => this.handleImageModal(event, 'panc1.gif')}/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -31,12 +49,12 @@ class PANC extends React.Component {
                         </p>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/panc2.gif')} alt="PANC"/>
+                        <img src={require('../img/panc2.gif')} alt="PANC" onClick={event => this.handleImageModal(event, 'panc2.gif')}/>
                     </Col>
                 </Row>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/panc3.gif')} alt="PANC"/>
+                        <img src={require('../img/panc3.gif')} alt="PANC" onClick={event => this.handleImageModal(event, 'panc3.gif')}/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -56,12 +74,20 @@ class PANC extends React.Component {
                         </p>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/panc4.gif')} alt="PANC"/>
+                        <img src={require('../img/panc4.gif')} alt="PANC" onClick={event => this.handleImageModal(event, 'panc4.gif')}/>
                     </Col>
                 </Row>
                 <div>
-                    <img src={require('../img/panc5.gif')} alt="PANC"/>
+                    <img src={require('../img/panc5.gif')} alt="PANC" onClick={event => this.handleImageModal(event, 'panc5.gif')}/>
                 </div>
+
+                {/* Image Modal */}
+                <ImageModal 
+                    img={this.state.imgModal}
+                    alt={this.state.alt}
+                    open={this.state.open}
+                    handleClose={this.handleCloseImageModal}
+                />
             </div>
         );
     }

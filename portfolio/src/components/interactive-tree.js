@@ -1,8 +1,28 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
 import YouTube from 'react-youtube';
+import ImageModal from '../components/image-modal';
 
 class InteractiveTree extends React.Component {
+    state = {
+        imgModal: 'interactive-tree-1.jpg',
+        open: false,
+        alt: 'Sentify',
+    };
+
+    handleCloseImageModal = () => {
+        this.setState({
+            open: false
+        });
+    };
+
+    handleImageModal = (event, imgName) => {
+        this.setState({
+            open: true,
+            imgModal: imgName,
+        });
+    }
+
     _onReady(event) {
         // access to player in all event handlers via event.target
         event.target.pauseVideo();
@@ -22,7 +42,7 @@ class InteractiveTree extends React.Component {
                 <h1>The Tree Of Knowledge</h1>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/interactive-tree-1.jpg')} alt="Interactive Tree"/>
+                        <img src={require('../img/interactive-tree-1.jpg')} alt="Interactive Tree" onClick={event => this.handleImageModal(event, 'interactive-tree-1.jpg')}/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -46,12 +66,12 @@ class InteractiveTree extends React.Component {
                         </p>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/interactive-tree-5.jpg')} alt="Interactive Tree"/>
+                        <img src={require('../img/interactive-tree-5.jpg')} alt="Interactive Tree" onClick={event => this.handleImageModal(event, 'interactive-tree-5.jpg')}/>
                     </Col>
                 </Row>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/interactive-tree-4.jpg')} alt="Interactive Tree"/>
+                        <img src={require('../img/interactive-tree-4.jpg')} alt="Interactive Tree" onClick={event => this.handleImageModal(event, 'interactive-tree-4.jpg')}/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -75,7 +95,7 @@ class InteractiveTree extends React.Component {
                         </p>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/interactive-tree-3.jpg')} alt="Interactive Tree"/>
+                        <img src={require('../img/interactive-tree-3.jpg')} alt="Interactive Tree" onClick={event => this.handleImageModal(event, 'interactive-tree-3.jpg')}/>
                     </Col>
                 </Row>
                 <div className="project-video">
@@ -85,6 +105,14 @@ class InteractiveTree extends React.Component {
                         onReady={this._onReady}
                     />
                 </div>
+                
+                {/* Image Modal */}
+                <ImageModal 
+                    img={this.state.imgModal}
+                    alt={this.state.alt}
+                    open={this.state.open}
+                    handleClose={this.handleCloseImageModal}
+                />
             </div>
         );
     }

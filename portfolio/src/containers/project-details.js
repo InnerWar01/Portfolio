@@ -8,6 +8,7 @@ import TravelAustralia from '../components/travel-australia';
 import BuildIcon from '../components/build-icon';
 import PortfolioMenu from '../components/portfolio-menu';
 import SideMenu from '../components/side-menu';
+import ScrollToTop from '../components/scroll-to-top';
 
 class ProjectDetails extends React.Component {
     constructor(props){
@@ -49,6 +50,7 @@ class ProjectDetails extends React.Component {
                 <PortfolioMenu/>
                 <SideMenu/>
                 {projectTemplate}
+                <ScrollToTop/>
             </div>
         );
     }

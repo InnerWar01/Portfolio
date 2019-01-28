@@ -1,8 +1,28 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
 import YouTube from 'react-youtube';
+import ImageModal from '../components/image-modal';
 
 class Lumobok extends React.Component {
+    state = {
+        imgModal: 'lumobok.jpg',
+        open: false,
+        alt: 'Sentify',
+    };
+
+    handleCloseImageModal = () => {
+        this.setState({
+            open: false
+        });
+    };
+
+    handleImageModal = (event, imgName) => {
+        this.setState({
+            open: true,
+            imgModal: imgName,
+        });
+    }
+
     _onReady(event) {
         // access to player in all event handlers via event.target
         event.target.pauseVideo();
@@ -22,7 +42,7 @@ class Lumobok extends React.Component {
                 <h1>Lumobok</h1>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/lumobok.jpg')} alt="Lumobok"/>
+                        <img src={require('../img/lumobok.jpg')} alt="Lumobok" onClick={event => this.handleImageModal(event, 'lumobok.jpg')}/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -48,12 +68,12 @@ class Lumobok extends React.Component {
                         </p>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/lumo1.gif')} alt="Lumobok"/>
+                        <img src={require('../img/lumo1.gif')} alt="Lumobok" onClick={event => this.handleImageModal(event, 'lumo1.gif')}/>
                     </Col>
                 </Row>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/lumo3.gif')} alt="Lumobok"/>
+                        <img src={require('../img/lumo3.gif')} alt="Lumobok" onClick={event => this.handleImageModal(event, 'lumo3.gif')}/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -77,7 +97,7 @@ class Lumobok extends React.Component {
                         </p>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/lumo4.gif')} alt="Lumobok"/>
+                        <img src={require('../img/lumo4.gif')} alt="Lumobok" onClick={event => this.handleImageModal(event, 'lumo4.gif')}/>
                     </Col>
                 </Row>
                 <div className="project-video">
@@ -87,6 +107,14 @@ class Lumobok extends React.Component {
                         onReady={this._onReady}
                     />
                 </div>
+
+                {/* Image Modal */}
+                <ImageModal 
+                    img={this.state.imgModal}
+                    alt={this.state.alt}
+                    open={this.state.open}
+                    handleClose={this.handleCloseImageModal}
+                />
             </div>
         );
     }

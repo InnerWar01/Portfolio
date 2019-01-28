@@ -107,4 +107,13 @@ div.my-social-pages {
     .row#welcome {
         margin: 0;
     }
+
+    div#project-list li {
+        width: 100% !important;
+    }
+
+    .scroll-to-top {
+        text-align: center;
+        float: none;
+    }
 }

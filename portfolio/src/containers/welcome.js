@@ -4,6 +4,7 @@ import { modelInstance } from '../model/model';
 import PortfolioMenu from '../components/portfolio-menu';
 import SideMenu from '../components/side-menu';
 import { Row, Col } from 'react-flexbox-grid';
+import ScrollToTop from '../components/scroll-to-top';
 
 class Welcome extends React.Component {
     constructor(props){
@@ -28,6 +29,7 @@ class Welcome extends React.Component {
                     </Col>
                     <Col xs={12} sm={12} md={11} lg={11}>
                         <ProjectList projectsMedia={this.state.projectsMedia} handleRedirection={this.handleRedirection}/>
+                        <ScrollToTop/>
                     </Col>
                 </Row>
             </div>

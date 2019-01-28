@@ -1,8 +1,28 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
 import YouTube from 'react-youtube';
+import ImageModal from '../components/image-modal';
 
 class Synkroma extends React.Component {
+    state = {
+        imgModal: 'synkroma2.jpg',
+        open: false,
+        alt: 'Sentify',
+    };
+
+    handleCloseImageModal = () => {
+        this.setState({
+            open: false
+        });
+    };
+
+    handleImageModal = (event, imgName) => {
+        this.setState({
+            open: true,
+            imgModal: imgName,
+        });
+    }
+
     _onReady(event) {
         // access to player in all event handlers via event.target
         event.target.pauseVideo();
@@ -22,7 +42,7 @@ class Synkroma extends React.Component {
                 <h1>Synkroma</h1>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/synkroma2.jpg')} alt="Synkroma"/>
+                        <img src={require('../img/synkroma2.jpg')} alt="Synkroma" onClick={event => this.handleImageModal(event, 'synkroma2.jpg')}/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -45,12 +65,12 @@ class Synkroma extends React.Component {
                         </p>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/synkroma6.gif')} alt="Synkroma"/>
+                        <img src={require('../img/synkroma6.gif')} alt="Synkroma" onClick={event => this.handleImageModal(event, 'synkroma6.gif')}/>
                     </Col>
                 </Row>
                 <Row>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/synkroma5.gif')} alt="Synkroma"/>
+                        <img src={require('../img/synkroma5.gif')} alt="Synkroma" onClick={event => this.handleImageModal(event, 'synkroma5.gif')}/>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
                         <p>
@@ -72,7 +92,7 @@ class Synkroma extends React.Component {
                         </p>
                     </Col>
                     <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/synkromalogo.png')} alt="Synkroma"/>
+                        <img src={require('../img/synkromalogo.png')} alt="Synkroma" onClick={event => this.handleImageModal(event, 'synkromalogo.png')}/>
                     </Col>
                 </Row>
                 <div className="project-video">
@@ -82,6 +102,14 @@ class Synkroma extends React.Component {
                         onReady={this._onReady}
                     />
                 </div>
+
+                {/* Image Modal */}
+                <ImageModal 
+                    img={this.state.imgModal}
+                    alt={this.state.alt}
+                    open={this.state.open}
+                    handleClose={this.handleCloseImageModal}
+                />
             </div>
         );
     }
