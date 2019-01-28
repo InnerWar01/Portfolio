@@ -7,7 +7,7 @@ class InteractiveTree extends React.Component {
     state = {
         imgModal: 'interactive-tree-1.jpg',
         open: false,
-        alt: 'Sentify',
+        alt: 'Interactive Tree',
     };
 
     handleCloseImageModal = () => {
@@ -41,10 +41,10 @@ class InteractiveTree extends React.Component {
             <div className="content-project">
                 <h1>The Tree Of Knowledge</h1>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/interactive-tree-1.jpg')} alt="Interactive Tree" onClick={event => this.handleImageModal(event, 'interactive-tree-1.jpg')}/>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             For the Physical Interaction Design and Realization course, 
                             our group decided to do a project that would make the posting 
@@ -57,7 +57,10 @@ class InteractiveTree extends React.Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
+                        <img src={require('../img/interactive-tree-5.jpg')} alt="Interactive Tree" onClick={event => this.handleImageModal(event, 'interactive-tree-5.jpg')}/>
+                    </Col>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             The two primary components in our project were the materials and 
                             the interaction. Given that the process of hanging is an elementary 
@@ -65,15 +68,12 @@ class InteractiveTree extends React.Component {
                             feedbacks to engage and entice the user.
                         </p>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/interactive-tree-5.jpg')} alt="Interactive Tree" onClick={event => this.handleImageModal(event, 'interactive-tree-5.jpg')}/>
-                    </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/interactive-tree-4.jpg')} alt="Interactive Tree" onClick={event => this.handleImageModal(event, 'interactive-tree-4.jpg')}/>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             I was involved in all of the stages of designing, developing and building
                             the tree. I wanted to be able to explore and learn new skills such as soldering,
@@ -85,7 +85,10 @@ class InteractiveTree extends React.Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
+                        <img src={require('../img/interactive-tree-3.jpg')} alt="Interactive Tree" onClick={event => this.handleImageModal(event, 'interactive-tree-3.jpg')}/>
+                    </Col>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             Project developed by Dani Mataruga, Magdalena Okurowska, Charlotte 
                             Skogström and Patricia Ciobanu.
@@ -93,9 +96,6 @@ class InteractiveTree extends React.Component {
                         <p>
                             You can check the instructable <a target="_blank" rel="noopener noreferrer" href="https://www.instructables.com/id/Interactive-Tree/">here</a> for a more in-depth view on how the tree was built.
                         </p>
-                    </Col>
-                    <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/interactive-tree-3.jpg')} alt="Interactive Tree" onClick={event => this.handleImageModal(event, 'interactive-tree-3.jpg')}/>
                     </Col>
                 </Row>
                 <div className="project-video">

@@ -7,7 +7,7 @@ class Lumobok extends React.Component {
     state = {
         imgModal: 'lumobok.jpg',
         open: false,
-        alt: 'Sentify',
+        alt: 'Lumobok',
     };
 
     handleCloseImageModal = () => {
@@ -41,10 +41,10 @@ class Lumobok extends React.Component {
             <div className="content-project">
                 <h1>Lumobok</h1>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/lumobok.jpg')} alt="Lumobok" onClick={event => this.handleImageModal(event, 'lumobok.jpg')}/>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             This project aims to redefine the concept of the book, 
                             by enhancing its familiar experience with projected visuals, 
@@ -55,7 +55,10 @@ class Lumobok extends React.Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
+                        <img src={require('../img/lumo1.gif')} alt="Lumobok" onClick={event => this.handleImageModal(event, 'lumo1.gif')}/>
+                    </Col>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             Lumobok was designed with flexibility of its content in mind, and 
                             the produced prototype includes six pages of dynamic content with 
@@ -67,15 +70,12 @@ class Lumobok extends React.Component {
                             corresponding responsive landscape. 
                         </p>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/lumo1.gif')} alt="Lumobok" onClick={event => this.handleImageModal(event, 'lumo1.gif')}/>
-                    </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/lumo3.gif')} alt="Lumobok" onClick={event => this.handleImageModal(event, 'lumo3.gif')}/>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             For this project I had the opportunity to work for the first time with Unity.
                             I was responsible for creating the content for the first page of the book. It consisted
@@ -87,7 +87,10 @@ class Lumobok extends React.Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
+                        <img src={require('../img/lumo4.gif')} alt="Lumobok" onClick={event => this.handleImageModal(event, 'lumo4.gif')}/>
+                    </Col>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             Project developed by Sonia Camacho, Andreas Almqvist, Nadia Campo and
                             Patricia Ciobanu.
@@ -95,9 +98,9 @@ class Lumobok extends React.Component {
                         <p>
                             You can check the code <a target="_blank" rel="noopener noreferrer" href="https://github.com/InnerWar01/Lumobok">here</a>.
                         </p>
-                    </Col>
-                    <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/lumo4.gif')} alt="Lumobok" onClick={event => this.handleImageModal(event, 'lumo4.gif')}/>
+                        <p>
+                            Lumobok was nominated for Creative Technical Application at the <a target="_blank" rel="noopener noreferrer" href="http://www.cawards.se/">C Awards</a> in 2018.
+                        </p>
                     </Col>
                 </Row>
                 <div className="project-video">

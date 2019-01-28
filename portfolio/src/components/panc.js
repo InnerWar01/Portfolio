@@ -6,7 +6,7 @@ class PANC extends React.Component {
     state = {
         imgModal: 'panc.jpg',
         open: false,
-        alt: 'Sentify',
+        alt: 'PANC',
     };
 
     handleCloseImageModal = () => {
@@ -27,10 +27,10 @@ class PANC extends React.Component {
             <div className="content-project">
                 <h1>PANC</h1>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/panc1.gif')} alt="PANC" onClick={event => this.handleImageModal(event, 'panc1.gif')}/>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             As a final bachelor project we decided to create a web application
                             that initiates children into the basics of programming by making the
@@ -40,7 +40,10 @@ class PANC extends React.Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
+                        <img src={require('../img/panc2.gif')} alt="PANC" onClick={event => this.handleImageModal(event, 'panc2.gif')}/>
+                    </Col>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             The app was developed mainly in JavaScript due to us using Blockly - a library for 
                             creating visual block programming languages and editors. We used mySQL as storage for
@@ -48,15 +51,12 @@ class PANC extends React.Component {
                             communicate with the robot we coded a Python server.
                         </p>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/panc2.gif')} alt="PANC" onClick={event => this.handleImageModal(event, 'panc2.gif')}/>
-                    </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/panc3.gif')} alt="PANC" onClick={event => this.handleImageModal(event, 'panc3.gif')}/>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             For this project I was responsible for successfully integrating the Blockly library
                             into the app and creating the communication with the Python server, managing and 
@@ -65,16 +65,16 @@ class PANC extends React.Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
+                        <img src={require('../img/panc4.gif')} alt="PANC" onClick={event => this.handleImageModal(event, 'panc4.gif')}/>
+                    </Col>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             The project was developed by Naomi Abitbol, Adeline Bounma and Patricia Ciobanu.
                         </p>
                         <p>
                             You can check the code <a target="_blank" rel="noopener noreferrer" href="https://github.com/InnerWar01/Projet-NAO">here</a>.
                         </p>
-                    </Col>
-                    <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/panc4.gif')} alt="PANC" onClick={event => this.handleImageModal(event, 'panc4.gif')}/>
                     </Col>
                 </Row>
                 <div>

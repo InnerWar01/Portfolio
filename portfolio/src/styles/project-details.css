@@ -5,9 +5,9 @@
 }
 
 .content-project {
-    margin: 5% 20%;
+    margin: 5% 25%;
     color: #fff;
-    text-align: justify;
+    text-align: center;
 }
 
 .content-project h1 {
@@ -19,7 +19,7 @@
 }
 
 .content-project img {
-    width: 100%;
+    width: 50%;
 }
 
 .container-project-details h3 > a {
@@ -34,5 +34,9 @@
 @media screen and (max-width: 767px) {
     .container-project-details > div {
         text-align: center;
+    }
+
+    .content-project {
+        margin: 5% 5%;
     }
 }

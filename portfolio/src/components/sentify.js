@@ -28,10 +28,10 @@ class Sentify extends React.Component {
             <div className="content-project">
                 <h1>Sentify</h1>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/sentify1.gif')} alt="Sentify" onClick={event => this.handleImageModal(event, 'sentify1.gif')}/>
+                    <Col xs={12} sm={12} md={12}>
+                        <img src={require('../img/sentify.png')} alt="Sentify" onClick={event => this.handleImageModal(event, 'sentify.png')}/>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             This is a project developed for the Interaction Programming and the
                             Dynamic Web course. The purpose of the application is to provide the 
@@ -41,7 +41,10 @@ class Sentify extends React.Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
+                        <img src={require('../img/sentify1.gif')} alt="Sentify" onClick={event => this.handleImageModal(event, 'sentify1.gif')}/>
+                    </Col>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             We used the <a target="_blank" rel="noopener noreferrer" href="https://developer.twitter.com/">Twitter API</a> to get the tweets, 
                             a <a target="_blank" rel="noopener noreferrer" href="http://help.sentiment140.com/api">Sentiment API</a> that returns the
@@ -50,15 +53,12 @@ class Sentify extends React.Component {
                             interact with the map. All the user specific data was stored with Firebase. The web app was developed in JavaScript.
                         </p>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/sentify2.gif')} alt="Sentify" onClick={event => this.handleImageModal(event, 'sentify2.gif')}/>
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/sentify3.gif')} alt="Sentify" onClick={event => this.handleImageModal(event, 'sentify3.gif')}/>
-                    </Col>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             During this project I have mostly written code related to the layout and the components’ functionalities. 
                             Regarding the functionalities that are implemented, for the my-searches page I have written the initial 
@@ -70,9 +70,12 @@ class Sentify extends React.Component {
                             that it is responsive.
                         </p>
                     </Col>
+                    <Col xs={12} sm={12} md={12}>
+                        <img src={require('../img/sentify3.gif')} alt="Sentify" onClick={event => this.handleImageModal(event, 'sentify3.gif')}/>
+                    </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             The project was developed by Patricia Ciobanu, Kristoffer Brown, Sahand Zarrinkoub and 
                             Niek Bijman.
@@ -82,7 +85,7 @@ class Sentify extends React.Component {
                             the code <a target="_blank" rel="noopener noreferrer" href="https://github.com/NiekBijman/Sentify">here</a>.
                         </p>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/sentify4.gif')} alt="Sentify" onClick={event => this.handleImageModal(event, 'sentify4.gif')}/>
                     </Col>
                 </Row>

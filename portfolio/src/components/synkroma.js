@@ -7,7 +7,7 @@ class Synkroma extends React.Component {
     state = {
         imgModal: 'synkroma2.jpg',
         open: false,
-        alt: 'Sentify',
+        alt: 'Synkroma',
     };
 
     handleCloseImageModal = () => {
@@ -41,10 +41,10 @@ class Synkroma extends React.Component {
             <div className="content-project">
                 <h1>Synkroma</h1>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/synkroma2.jpg')} alt="Synkroma" onClick={event => this.handleImageModal(event, 'synkroma2.jpg')}/>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             In this project we aimed to incorporate mood as a core element in
                             playlist creation. Our main idea focused on the concept that in the same 
@@ -55,7 +55,10 @@ class Synkroma extends React.Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
+                        <img src={require('../img/synkroma6.gif')} alt="Synkroma" onClick={event => this.handleImageModal(event, 'synkroma6.gif')}/>
+                    </Col>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             Therefore, we created an application which resembles a quiz,
                             with the main and only question being: "What are you feeling ?". As a 
@@ -64,15 +67,12 @@ class Synkroma extends React.Component {
                             This application was meant to be an addition feature on Spotify.  
                         </p>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/synkroma6.gif')} alt="Synkroma" onClick={event => this.handleImageModal(event, 'synkroma6.gif')}/>
-                    </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/synkroma5.gif')} alt="Synkroma" onClick={event => this.handleImageModal(event, 'synkroma5.gif')}/>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             I was responsible for programming the web application (developed in HTML and JavaScript),
                             specifically creating the quiz and connecting our app to the Spotify through their API. 
@@ -82,7 +82,10 @@ class Synkroma extends React.Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
+                        <img src={require('../img/synkromalogo.png')} alt="Synkroma" onClick={event => this.handleImageModal(event, 'synkromalogo.png')}/>
+                    </Col>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             The project was developed by Sonia Camacho, Puspita Parahita Anindita, Nadia Campo and
                             Patricia Ciobanu.
@@ -90,9 +93,6 @@ class Synkroma extends React.Component {
                         <p>
                             You can check the code <a target="_blank" rel="noopener noreferrer" href="https://github.com/nadiacw/synkroma">here</a>.
                         </p>
-                    </Col>
-                    <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/synkromalogo.png')} alt="Synkroma" onClick={event => this.handleImageModal(event, 'synkromalogo.png')}/>
                     </Col>
                 </Row>
                 <div className="project-video">

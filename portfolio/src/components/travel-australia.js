@@ -6,7 +6,7 @@ class TravelAustralia extends React.Component {
     state = {
         imgModal: 'travel-australia.jpg',
         open: false,
-        alt: 'Sentify',
+        alt: 'Travel To Australia',
     };
 
     handleCloseImageModal = () => {
@@ -27,10 +27,10 @@ class TravelAustralia extends React.Component {
             <div className="content-project">
                 <h1>Travel to Australia</h1>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/travel-australia2.gif')} alt="TravelAustralia" onClick={event => this.handleImageModal(event, 'travel-australia2.gif')}/>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             This is a website dedicated to those who would like to visit Australia.
                             It was done as a project for a course in my second year of bachelor. 
@@ -38,21 +38,21 @@ class TravelAustralia extends React.Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
+                        <img src={require('../img/travel-australia3.gif')} alt="TravelAustralia" onClick={event => this.handleImageModal(event, 'travel-australia3.gif')}/>
+                    </Col>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             The app was developed mainly in PHP. All the database handling was done through
                             mySQL.
                         </p>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/travel-australia3.gif')} alt="TravelAustralia" onClick={event => this.handleImageModal(event, 'travel-australia3.gif')}/>
-                    </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/travel-australia6.gif')} alt="TravelAustralia" onClick={event => this.handleImageModal(event, 'travel-australia6.gif')}/>
                     </Col>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             For this project I was responsible for creating the User Interface,
                             for creating the user space with the data handling (user information and reservations).
@@ -61,16 +61,16 @@ class TravelAustralia extends React.Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} md={6}>
+                    <Col xs={12} sm={12} md={12}>
+                        <img src={require('../img/travel-australia5.gif')} alt="TravelAustralia" onClick={event => this.handleImageModal(event, 'travel-australia5.gif')}/>
+                    </Col>
+                    <Col xs={12} sm={12} md={12}>
                         <p>
                             The project was developed by Wenjing Wu, Adeline Bounma and Patricia Ciobanu.
                         </p>
                         <p>
                             You can check the code <a target="_blank" rel="noopener noreferrer" href="https://github.com/InnerWar01/Travel-Website">here</a>.
                         </p>
-                    </Col>
-                    <Col xs={12} sm={6} md={6}>
-                        <img src={require('../img/travel-australia5.gif')} alt="TravelAustralia" onClick={event => this.handleImageModal(event, 'travel-australia5.gif')}/>
                     </Col>
                 </Row>
                 <div>
