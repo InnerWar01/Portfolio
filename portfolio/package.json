@@ -20,7 +20,6 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.8",
     "react-youtube": "^7.8.0",
-    "set-default-browser": "^1.0.1",
     "url-parse": "^1.4.3"
   },
   "scripts": {
@@ -31,5 +30,6 @@
   },
   "browserslist": [
     "last 1 Chrome versions"
-  ]
+  ],
+  "devDependencies": {}
 }
