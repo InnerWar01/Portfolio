@@ -1,4 +1,5 @@
 import React from 'react';
+import IntoTheWoods from '../components/into-the-woods';
 import InteractiveTree from '../components/interactive-tree';
 import Lumobok from '../components/lumobok';
 import Synkroma from '../components/synkroma';
@@ -22,6 +23,9 @@ class ProjectDetails extends React.Component {
         let projectTemplate = null;
 
         switch (this.state.projectName) {
+            case "into-the-woods":
+                projectTemplate = <IntoTheWoods/>
+                break;
             case "interactive-tree":
                 projectTemplate = <InteractiveTree/>
                 break;

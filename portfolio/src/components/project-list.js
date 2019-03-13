@@ -50,6 +50,12 @@ const projectData = [
     year: "2018",
     projects:[
       {
+        id: 7,
+        img: require('../img/into-the-woods.png'),
+        title: 'Into The Woods',
+        name: 'into-the-woods',
+      },
+      {
         id: 6,
         img: require('../img/sentify.png'),
         title: 'Sentify',

@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  color: #EAF2FD;
 }
 
 .row.header {
@@ -38,4 +39,81 @@ p a:visited {
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
+}
+
+/* Portfolio Menu */
+.navbar {
+  margin: 0;
+  min-height: 0;
+  border: 0;
+  position: relative;
+  text-align: center;
+}
+
+#menu .row {
+  float: none;
+  margin: 10px 35%;
+  width: 30%;
+  padding: 0;
+}
+
+#menu .row .menu-item {
+  display: inline;
+  list-style: none;
+  margin: 0;
+  line-height: 180%;
+  padding-left: 1%;
+  font-size: large;
+}
+
+#menu .row .menu-item:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#menu .row .menu-item:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#menu .row .menu-item:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+#menu .row .menu-item.active {
+  color: #fff;
+}
+
+.nav>.menu-item {
+  position: relative;
+  display: block;
+}
+
+/*************************/
+
+/* Side Menu */
+div.my-social-pages {
+  position: fixed;
+  display: inline-grid;
+}
+
+/************************/
+
+@media screen and (max-width: 767px) {
+  #menu .row {
+    margin: 10px 25%;
+    width: 50%;
+  }
 }

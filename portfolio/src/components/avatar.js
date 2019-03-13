@@ -24,7 +24,7 @@ function ImageAvatar(props) {
     <div className={classes.row}>
       <Avatar
         alt="Patricia Ciobanu"
-        src={require('../img/avatar.JPG')}
+        src={require('../img/avatar.jpg')}
         className={classNames(classes.avatar, classes.bigAvatar)}
       />
     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Row, Col } from 'react-flexbox-grid';
 
 class PortfolioMenu extends React.Component {
   constructor(props){
@@ -20,11 +21,10 @@ class PortfolioMenu extends React.Component {
   render () {
       return (
           <div id="menu" className="navbar" role="navigation">
-            <ul className="nav navbar-nav">
-              <li className={this.state.page === 0 ? "menu-item active" : "menu-item"} onClick={event => this.handleRedirection(event)}>Projects</li>
-              <li> | </li>
-              <li className={this.state.page === 1 ? "menu-item active" : "menu-item"} onClick={event => this.handleRedirection(event)}>About</li>
-            </ul>
+            <Row className="nav navbar-nav">
+              <Col xs={6} sm={6} md={6} className={this.state.page === 0 ? "menu-item active" : "menu-item"} onClick={event => this.handleRedirection(event)}>Projects</Col>
+              <Col xs={6} sm={6} md={6} className={this.state.page === 1 ? "menu-item active" : "menu-item"} onClick={event => this.handleRedirection(event)}>About</Col>
+            </Row>
           </div>
       );
   }
