@@ -1,5 +1,5 @@
 .container-about h3 > a {
-    color: #fff;
+    color: #3f51b5;
     text-decoration: none;
 }
 
@@ -10,7 +10,7 @@
 .content-about > .row {
     width: 100%;
     text-align: justify;
-    color: #fff;
+    color:#3f51b5;
 }
 
 .content-about {

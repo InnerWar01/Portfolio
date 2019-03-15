@@ -9,7 +9,7 @@
 }
 
 h1, h3 {
-    color: #fff;
+    color: #3f51b5;
     font-weight: lighter;
     margin: 0;
     padding: 5%;
@@ -62,11 +62,6 @@ h1#name {
 
 #menu ul li.menu-item:hover {
     cursor: pointer;
-    color: #fff;
-}
-
-#menu ul li.active {
-    color: #fff;
 }
 
 .nav>li {
@@ -94,6 +89,8 @@ div.my-social-pages {
     -ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
     transition: filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
     padding-top: 3.25em;
+    padding-right: 3em;
+    padding-left: 1em;
 }
 
     #project-list.is-transitioning {
