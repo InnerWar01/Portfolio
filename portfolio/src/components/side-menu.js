@@ -19,8 +19,8 @@ class SideMenu extends React.Component {
             window.open('https://github.com/InnerWar01/');
         } else if (btn.id === "linkedin") {
             window.open('https://www.linkedin.com/in/patricia-ciobanu/');
-        } else if (btn.id === "instagram") {
-            window.open('https://www.instagram.com/inner.war/');
+        } else if (btn.id === "email") {
+            window.open('mailto:ciobanu.paty@gmail.com');
         }
     };
 
@@ -39,9 +39,9 @@ class SideMenu extends React.Component {
                 <i className="fab fa-linkedin fa-2x"></i>
             </Button>
           </Tooltip>
-          <Tooltip title="Instagram">
-            <Button variant="fab" color="primary" aria-label="Instagram" className={classes.fab} id="instagram">
-                <i className="fab fa-instagram fa-2x"></i>
+          <Tooltip title="Email">
+            <Button variant="fab" color="primary" aria-label="email" className={classes.fab} id="email">
+              <i class="material-icons">alternate_email</i>
             </Button>
           </Tooltip>
         </div>

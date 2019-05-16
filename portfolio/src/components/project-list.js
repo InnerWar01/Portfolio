@@ -50,6 +50,13 @@ const projects =
     title: 'Into The Woods',
     name: 'into-the-woods',
     year: '2018'
+  },
+  {
+    id: 8,
+    img: require('../img/master-thesis.jpg'),
+    title: 'Master Thesis',
+    name: 'master-thesis',
+    year: '2019'
   }
 ];
 

@@ -10,6 +10,7 @@ import BuildIcon from '../components/build-icon';
 import PortfolioMenu from '../components/portfolio-menu';
 import SideMenu from '../components/side-menu';
 import ScrollToTop from '../components/scroll-to-top';
+import MasterThesis from '../components/master-thesis';
 
 class ProjectDetails extends React.Component {
     constructor(props){
@@ -43,6 +44,9 @@ class ProjectDetails extends React.Component {
                 break;
             case "travel-australia":
                 projectTemplate = <TravelAustralia/>
+                break;
+            case "master-thesis":
+                projectTemplate = <MasterThesis/>
                 break;
             default:
                 projectTemplate = <div><BuildIcon/><p className="no-project">Project is under development</p></div>

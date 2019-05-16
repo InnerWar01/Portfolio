@@ -17,7 +17,7 @@ class AboutTemplate extends React.Component {
                             Interactive Media Technology at KTH Royal Institute of Technology in Stockholm.
                             The projects that you have seen have been made with immense pleasure and dedication, and I hope
                             that I can do more of them in the future. If you want to contact me, or ask me 
-                            about the projects, you can access my LinkedIn profile from the side menu. Happy Exploring !
+                            about the projects, you can email me at <i>ciobanu.paty@gmail.com</i>. Happy Exploring !
                         </p>
                     </Col>
                 </Row>
