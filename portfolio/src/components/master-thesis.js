@@ -29,18 +29,24 @@ class MasterThesis extends React.Component {
                 <Row>
                     <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/master-thesis.jpg')} alt="Master Thesis" onClick={event => this.handleImageModal(event, 'master-thesis.jpg')}/>
-                        <p className="img-caption">By visual artist Nunzio Paci</p>
+                        <p className="img-caption">Juniper - a cultural probe and an Extended Body Map</p>
                     </Col>
                     <Col xs={12} sm={12} md={12}>
+                        <h2>Abstract</h2>
                         <p>
-                            As technology has become a significant agent in the current multispecies kinship, creating a beneficial collaboration between all 
-                            members of the ecosystem has become a challenge. In this paper, my emphasis is on combining all components, human and non-human and 
-                            I am concerned with understanding how is it different to care for something other than human, the trouble with caring and transforming 
-                            multispecies relationships into matters of care rather than matters of concern, and methodologies in decentering the human from design 
-                            to break the boundaries of the body in order to understand how to design for more than human relationships. By following a Research Through 
-                            Design approach, I am questioning human-centered methodologies through two activities: a cultural probe which pragmatically addresses notions 
-                            of collaboration between humans and their ecosystem by fostering care, and an orienting activity that focuses on conceptually questioning 
-                            what it means to be human and breaking the boundaries of the human body.
+                            In the current climate crisis, creating a symbiotic collaboration between all members of an
+                            ecosystem has become a prominent topic. By reevaluating human-centered methodologies
+                            through a cultural probe and an orienting activity, I address notions of collaboration,
+                            cohabitation and extending one’s body beyond the skin. I explore the concept of care in
+                            human-plant relationships, along with understanding the trouble with designing for and
+                            with care in the context of human-nature-technology kinship. The cultural probe, through its
+                            ambiguity, has prompted reflections on care and multispecies kinship, whereas the orienting
+                            activity has been an attempt to potentially shift to a non-anthropocentric perspective. A
+                            materialization of speculative thinking, these activities are a first step in challenging human
+                            exceptionalism, a new approach to viewing the human as decentered in design. This paper
+                            positions care as a premise in addressing human-centered methodologies to include
+                            non-human actors, with prototypes and speculative design as techniques that facilitate
+                            approaching a challenging and complex topic as one of more-than-human assemblages.
                         </p>
                     </Col>
                 </Row>
@@ -50,10 +56,16 @@ class MasterThesis extends React.Component {
                     </Col>
                     <Col xs={12} sm={12} md={12}>
                          <p>
-                            Full info on the project will come soon! Meanwhile, check how I made the  <a target="_blank" rel="noopener noreferrer" href="https://www.instructables.com/id/Juniper/">cultural probe</a>, an important aspect in my master thesis!
+                            Instructable on how I created the cultural probe <a target="_blank" rel="noopener noreferrer" href="https://www.instructables.com/id/Juniper/">here</a>.
                         </p>
                         <p>
-                            Project developed by Patricia Ciobanu, under the supervision of <a target="_blank" rel="noopener noreferrer" href="https://www.kareyhelms.com/">Karey Helms</a>.
+                            Link to my master thesis will be posted soon!
+                        </p>
+                        <p>
+                            Project developed by Patricia Ciobanu, under the supervision of 
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.kareyhelms.com/"> Karey Helms</a> and 
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.kth.se/profile/ciolfi/"> Marianela Ciolfi Felice</a>, 
+                            <a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=LZJ0YvAAAAAJ&amp;hl=en&amp;oi=ao"> Kristina Höök</a> as examiner.
                         </p>
                     </Col>
                 </Row>
