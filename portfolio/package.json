@@ -10,7 +10,7 @@
     "extend": "^3.0.2",
     "handlebars": "^4.1.0",
     "js-yaml": "^3.13.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "lodash.template": "^4.5.0",
     "macaddress": "^0.2.9",
     "material-ui": "^1.0.0-beta.47",
