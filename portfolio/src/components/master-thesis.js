@@ -59,7 +59,7 @@ class MasterThesis extends React.Component {
                             Instructable on how I created the cultural probe <a target="_blank" rel="noopener noreferrer" href="https://www.instructables.com/id/Juniper/">here</a>.
                         </p>
                         <p>
-                            Link to my master thesis will be posted soon!
+                            Link to degree project <a target="_blank" rel="noopener noreferrer" href="http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1337125&dswid=5246">here</a>!
                         </p>
                         <p>
                             Project developed by Patricia Ciobanu, under the supervision of 
