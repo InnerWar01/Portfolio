@@ -1,6 +1,5 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
-import YouTube from 'react-youtube';
 import ImageModal from '../components/image-modal';
 
 class InteractiveTree extends React.Component {
@@ -29,14 +28,6 @@ class InteractiveTree extends React.Component {
     }
 
     render () {
-        const opts = {
-            height: '400vh',
-            width: '100%',
-            playerVars: { // https://developers.google.com/youtube/player_parameters
-              autoplay: 1
-            }
-        };
-
         return (
             <div className="content-project">
                 <h1>The Tree Of Knowledge</h1>
@@ -98,13 +89,6 @@ class InteractiveTree extends React.Component {
                         </p>
                     </Col>
                 </Row>
-                <div className="project-video">
-                    <YouTube
-                        videoId="a1lsaXDgHmQ"
-                        opts={opts}
-                        onReady={this._onReady}
-                    />
-                </div>
                 
                 {/* Image Modal */}
                 <ImageModal 

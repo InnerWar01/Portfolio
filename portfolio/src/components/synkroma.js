@@ -1,6 +1,5 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
-import YouTube from 'react-youtube';
 import ImageModal from '../components/image-modal';
 
 class Synkroma extends React.Component {
@@ -23,20 +22,7 @@ class Synkroma extends React.Component {
         });
     }
 
-    _onReady(event) {
-        // access to player in all event handlers via event.target
-        event.target.pauseVideo();
-    }
-
     render () {
-        const opts = {
-            height: '400vh',
-            width: '100%',
-            playerVars: { // https://developers.google.com/youtube/player_parameters
-              autoplay: 1
-            }
-        };
-
         return (
             <div className="content-project">
                 <h1>Synkroma</h1>
@@ -95,13 +81,6 @@ class Synkroma extends React.Component {
                         </p>
                     </Col>
                 </Row>
-                <div className="project-video">
-                    <YouTube
-                        videoId="8gxsn-Kfa2M"
-                        opts={opts}
-                        onReady={this._onReady}
-                    />
-                </div>
 
                 {/* Image Modal */}
                 <ImageModal 

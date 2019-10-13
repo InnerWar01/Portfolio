@@ -13,11 +13,10 @@ class AboutTemplate extends React.Component {
                     <Col xs={12} sm={8} md={8}>
                         <p id="about-text">
                             Hi ! I'm Patricia and if you are here then you may want to know more about me.
-                            Well, the short version would be that I am currently a master student in 
-                            Interactive Media Technology at KTH Royal Institute of Technology in Stockholm.
-                            The projects that you have seen have been made with immense pleasure and dedication, and I hope
+                            Well, the short version would be that I am currently a PhD student in 
+                            Interaction Design at Stockholm University. The projects that you have seen have been made with immense pleasure and dedication, and I hope
                             that I can do more of them in the future. If you want to contact me, or ask me 
-                            about the projects, you can email me at <i>ciobanu.paty@gmail.com</i>. Happy Exploring !
+                            about the projects, you can email me at <i>patricia@dsv.su.se</i>. Happy Exploring !
                         </p>
                     </Col>
                 </Row>

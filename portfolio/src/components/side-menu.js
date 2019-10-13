@@ -20,7 +20,7 @@ class SideMenu extends React.Component {
         } else if (btn.id === "linkedin") {
             window.open('https://www.linkedin.com/in/patricia-ciobanu/');
         } else if (btn.id === "email") {
-            window.open('mailto:ciobanu.paty@gmail.com');
+            window.open('mailto:patricia@dsv.su.se');
         }
     };
 
@@ -41,7 +41,7 @@ class SideMenu extends React.Component {
           </Tooltip>
           <Tooltip title="Email">
             <Button variant="fab" color="primary" aria-label="email" className={classes.fab} id="email">
-              <i class="material-icons">alternate_email</i>
+              <i className="material-icons">alternate_email</i>
             </Button>
           </Tooltip>
         </div>
