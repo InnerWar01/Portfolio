@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 import Welcome from './welcome';
 import ProjectDetails from './project-details';
 import About from './about';
+import EmojiNatureIcon from '@material-ui/icons';
 
 class App extends Component {
   render() {
@@ -16,7 +17,7 @@ class App extends Component {
           <Route path="/about" render={() => <About/>}/>
         </header>
         <footer>
-          <p>Copyright &copy; Patricia Ciobanu, {new Date().getFullYear()}. All rights reserved.</p>
+          <p>Copyright &copy; Patricia Ciobanu, {new Date().getFullYear()}. Made with care <i className="material-icons">emoji_nature</i></p>
         </footer>
       </div>
     );
