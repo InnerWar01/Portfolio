@@ -11,7 +11,7 @@ class PortfolioMenu extends React.Component {
 
   handleRedirection = event => {
     if (event.target.textContent === "About" && this.state.page !== 1) {
-      window.location.assign('/about');
+      window.location.assign('/Portfolio/about');
     }
     else if (event.target.textContent === "Projects" && this.state.page !== 0) {
       window.location.assign('/Portfolio');

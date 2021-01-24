@@ -49,7 +49,7 @@ class ProjectDetails extends React.Component {
                 projectTemplate = <MasterThesis/>
                 break;
             default:
-                projectTemplate = <div><BuildIcon/><p className="no-project">Project is under development</p></div>
+                projectTemplate = <div><BuildIcon/><p className="no-project">Project page is under development</p></div>
                 break;
         }
 

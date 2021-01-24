@@ -16,7 +16,7 @@ class Welcome extends React.Component {
     }
 
     handleRedirection = (evt, projectName) => {
-        window.location.assign('/projects/' + projectName);
+        window.location.assign('Portfolio/projects/' + projectName);
     }
 
     render () {
