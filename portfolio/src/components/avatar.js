@@ -1,38 +1,24 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import { withStyles } from 'material-ui/styles';
-import Avatar from 'material-ui/Avatar';
+import { makeStyles } from '@material-ui/core/styles';
+import Avatar from '@material-ui/core/Avatar';
 
-const styles = {
-  row: {
+const useStyles = makeStyles((theme) => ({
+  root: {
     display: 'flex',
-    justifyContent: 'center',
+    '& > *': {
+      margin: theme.spacing(1),
+    },
   },
-  avatar: {
-    margin: 10,
-  },
-  bigAvatar: {
-    width: 180,
-    height: 180,
-  },
-};
+}));
 
-function ImageAvatar(props) {
-  const { classes } = props;
+export default function ImageAvatars() {
+  const classes = useStyles();
+
   return (
-    <div className={classes.row}>
-      <Avatar
+    <div className={classes.root}>
+      <Avatar 
         alt="Patricia Ciobanu"
-        src={require('../img/avatar.JPG')}
-        className={classNames(classes.avatar, classes.bigAvatar)}
-      />
+        src={require('../img/avatar.jpg')} />
     </div>
   );
 }
-
-ImageAvatar.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(ImageAvatar);
