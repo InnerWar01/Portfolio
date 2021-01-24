@@ -18,7 +18,7 @@ export default function ImageAvatars() {
     <div className={classes.root}>
       <Avatar 
         alt="Patricia Ciobanu"
-        src={require('../img/avatar.jpg')} />
+        src={require('../img/avatar.png')} />
     </div>
   );
 }
