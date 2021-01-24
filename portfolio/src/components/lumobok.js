@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-flexbox-grid';
+//import { Row, Col } from 'react-flexbox-grid';
 import YouTube from 'react-youtube';
 import ImageModal from '../components/image-modal';
 
@@ -40,7 +40,7 @@ class Lumobok extends React.Component {
         return (
             <div className="content-project">
                 <h1>Lumobok</h1>
-                <Row>
+                {/* <Row>
                     <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/lumobok.jpg')} alt="Lumobok" onClick={event => this.handleImageModal(event, 'lumobok.jpg')}/>
                     </Col>
@@ -102,7 +102,7 @@ class Lumobok extends React.Component {
                             Lumobok was nominated for Creative Technical Application at the <a target="_blank" rel="noopener noreferrer" href="http://www.cawards.se/">C Awards</a> in 2018.
                         </p>
                     </Col>
-                </Row>
+                </Row> */}
                 <div className="project-video">
                     <YouTube
                         videoId="wGMuoyQ7sis"

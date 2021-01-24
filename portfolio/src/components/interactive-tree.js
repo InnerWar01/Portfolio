@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-flexbox-grid';
+//import { Row, Col } from 'react-flexbox-grid';
 import ImageModal from '../components/image-modal';
 
 class InteractiveTree extends React.Component {
@@ -31,7 +31,7 @@ class InteractiveTree extends React.Component {
         return (
             <div className="content-project">
                 <h1>The Tree Of Knowledge</h1>
-                <Row>
+                {/* <Row>
                     <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/interactive-tree-1.jpg')} alt="Interactive Tree" onClick={event => this.handleImageModal(event, 'interactive-tree-1.jpg')}/>
                     </Col>
@@ -88,7 +88,7 @@ class InteractiveTree extends React.Component {
                             You can check the instructable <a target="_blank" rel="noopener noreferrer" href="https://www.instructables.com/id/Interactive-Tree/">here</a> for a more in-depth view on how the tree was built.
                         </p>
                     </Col>
-                </Row>
+                </Row> */}
                 
                 {/* Image Modal */}
                 <ImageModal 

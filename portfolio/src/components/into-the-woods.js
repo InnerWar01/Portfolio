@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-flexbox-grid';
+//import { Row, Col } from 'react-flexbox-grid';
 import ImageModal from '../components/image-modal';
 
 class IntoTheWoods extends React.Component {
@@ -27,7 +27,7 @@ class IntoTheWoods extends React.Component {
         return (
             <div className="content-project">
                 <h1>Into The Woods</h1>
-                <Row>
+                {/* <Row>
                     <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/into-the-woods2.jpg')} alt="IntoTheWoods" onClick={event => this.handleImageModal(event, 'into-the-woods2.jpg')}/>
                     </Col>
@@ -133,7 +133,7 @@ class IntoTheWoods extends React.Component {
                             to interact with it rather than compeling them. 
                         </p>
                     </Col>
-                </Row>
+                </Row> */}
 
                 {/* Image Modal */}
                 <ImageModal 

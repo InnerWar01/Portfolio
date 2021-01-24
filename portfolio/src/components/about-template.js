@@ -1,12 +1,12 @@
 import React from 'react';
-import { Row, Col } from 'react-flexbox-grid';
+//import { Row, Col } from 'react-flexbox-grid';
 import Avatar from '../components/avatar';
 
 class AboutTemplate extends React.Component {
     render () {
         return (
             <div className="content-about">
-                <Row>
+                {/* <Row>
                     <Col xs={12} sm={4} md={4}>
                         <Avatar/>
                     </Col>
@@ -19,7 +19,7 @@ class AboutTemplate extends React.Component {
                             about the projects, you can email me at <i>patricia@dsv.su.se</i>. Happy Exploring !
                         </p>
                     </Col>
-                </Row>
+                </Row> */}
             </div>
         );
     }

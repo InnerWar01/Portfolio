@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-flexbox-grid';
+//import { Row, Col } from 'react-flexbox-grid';
 import ImageModal from '../components/image-modal';
 
 class TravelAustralia extends React.Component {
@@ -26,7 +26,7 @@ class TravelAustralia extends React.Component {
         return (
             <div className="content-project">
                 <h1>Travel to Australia</h1>
-                <Row>
+                {/* <Row>
                     <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/travel-australia2.gif')} alt="TravelAustralia" onClick={event => this.handleImageModal(event, 'travel-australia2.gif')}/>
                     </Col>
@@ -72,7 +72,7 @@ class TravelAustralia extends React.Component {
                             You can check the code <a target="_blank" rel="noopener noreferrer" href="https://github.com/InnerWar01/Travel-Website">here</a>.
                         </p>
                     </Col>
-                </Row>
+                </Row> */}
                 <div>
                     <img src={require('../img/travel-australia4.gif')} alt="TravelAustralia" onClick={event => this.handleImageModal(event, 'travel-australia4.gif')}/>
                 </div>

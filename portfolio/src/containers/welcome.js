@@ -3,7 +3,7 @@ import ProjectList from '../components/project-list';
 import { modelInstance } from '../model/model';
 import PortfolioMenu from '../components/portfolio-menu';
 import SideMenu from '../components/side-menu';
-import { Row, Col } from 'react-flexbox-grid';
+//import { Row, Col } from 'react-flexbox-grid';
 import ScrollToTop from '../components/scroll-to-top';
 
 class Welcome extends React.Component {
@@ -23,7 +23,7 @@ class Welcome extends React.Component {
         return (
             <div>
                 <PortfolioMenu page={this.state.page}/>
-                <Row id="welcome">
+                {/* <Row id="welcome">
                     <Col xs={12} sm={12} md={1} lg={1}>
                         <SideMenu/>
                     </Col>
@@ -31,7 +31,7 @@ class Welcome extends React.Component {
                         <ProjectList projectsMedia={this.state.projectsMedia} handleRedirection={this.handleRedirection}/>
                         <ScrollToTop/>
                     </Col>
-                </Row>
+                </Row> */}
             </div>
         );
     }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-flexbox-grid';
+//import { Row, Col } from 'react-flexbox-grid';
 import ImageModal from '../components/image-modal';
 
 class Synkroma extends React.Component {
@@ -26,7 +26,7 @@ class Synkroma extends React.Component {
         return (
             <div className="content-project">
                 <h1>Synkroma</h1>
-                <Row>
+                {/* <Row>
                     <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/synkroma2.jpg')} alt="Synkroma" onClick={event => this.handleImageModal(event, 'synkroma2.jpg')}/>
                     </Col>
@@ -80,7 +80,7 @@ class Synkroma extends React.Component {
                             You can check the code <a target="_blank" rel="noopener noreferrer" href="https://github.com/nadiacw/synkroma">here</a>.
                         </p>
                     </Col>
-                </Row>
+                </Row> */}
 
                 {/* Image Modal */}
                 <ImageModal 

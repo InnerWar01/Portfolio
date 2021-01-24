@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-flexbox-grid';
+//import { Row, Col } from 'react-flexbox-grid';
 import ImageModal from '../components/image-modal';
 
 class MasterThesis extends React.Component {
@@ -26,7 +26,7 @@ class MasterThesis extends React.Component {
         return (
             <div className="content-project">
                 <h1>Master Thesis</h1>
-                <Row>
+                {/* <Row>
                     <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/master-thesis.jpg')} alt="Master Thesis" onClick={event => this.handleImageModal(event, 'master-thesis.jpg')}/>
                         <p className="img-caption">Juniper - a cultural probe and an Extended Body Map</p>
@@ -68,7 +68,7 @@ class MasterThesis extends React.Component {
                             <a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=LZJ0YvAAAAAJ&amp;hl=en&amp;oi=ao"> Kristina Höök</a> as examiner.
                         </p>
                     </Col>
-                </Row>
+                </Row> */}
 
                 {/* Image Modal */}
                 <ImageModal 

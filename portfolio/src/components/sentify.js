@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-flexbox-grid';
+//import { Row, Col } from 'react-flexbox-grid';
 import ImageModal from '../components/image-modal';
 
 class Sentify extends React.Component {
@@ -27,7 +27,7 @@ class Sentify extends React.Component {
         return (
             <div className="content-project">
                 <h1>Sentify</h1>
-                <Row>
+                {/* <Row>
                     <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/sentify.png')} alt="Sentify" onClick={event => this.handleImageModal(event, 'sentify.png')}/>
                     </Col>
@@ -88,7 +88,7 @@ class Sentify extends React.Component {
                     <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/sentify4.gif')} alt="Sentify" onClick={event => this.handleImageModal(event, 'sentify4.gif')}/>
                     </Col>
-                </Row>
+                </Row> */}
 
                 {/* Image Modal */}
                 <ImageModal 

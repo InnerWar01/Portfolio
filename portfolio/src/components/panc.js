@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-flexbox-grid';
+//import { Row, Col } from 'react-flexbox-grid';
 import ImageModal from '../components/image-modal';
 
 class PANC extends React.Component {
@@ -26,7 +26,7 @@ class PANC extends React.Component {
         return (
             <div className="content-project">
                 <h1>PANC</h1>
-                <Row>
+                {/* <Row>
                     <Col xs={12} sm={12} md={12}>
                         <img src={require('../img/panc1.gif')} alt="PANC" onClick={event => this.handleImageModal(event, 'panc1.gif')}/>
                     </Col>
@@ -76,7 +76,7 @@ class PANC extends React.Component {
                             You can check the code <a target="_blank" rel="noopener noreferrer" href="https://github.com/InnerWar01/Projet-NAO">here</a>.
                         </p>
                     </Col>
-                </Row>
+                </Row> */}
                 <div>
                     <img src={require('../img/panc5.gif')} alt="PANC" onClick={event => this.handleImageModal(event, 'panc5.gif')}/>
                 </div>
