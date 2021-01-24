@@ -12,7 +12,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 id="name">Patricia Ciobanu </h1>
-          <Route exact path="/" component={Welcome}/>
+          <Route exact path="/portfolio" component={Welcome}/>
           <Route path="/projects/:projectName" render={() => <ProjectDetails/>}/> 
           <Route path="/about" render={() => <About/>}/>
         </header>

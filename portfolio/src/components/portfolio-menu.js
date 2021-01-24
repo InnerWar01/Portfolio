@@ -14,7 +14,7 @@ class PortfolioMenu extends React.Component {
       window.location.assign('/about');
     }
     else if (event.target.textContent === "Projects" && this.state.page !== 0) {
-      window.location.assign('/');
+      window.location.assign('/Portfolio');
     }
   };
     
