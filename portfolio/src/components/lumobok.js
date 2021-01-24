@@ -1,6 +1,6 @@
 import React from 'react';
 //import { Row, Col } from 'react-flexbox-grid';
-import YouTube from 'react-youtube';
+//import YouTube from 'react-youtube';
 import ImageModal from '../components/image-modal';
 
 class Lumobok extends React.Component {
@@ -23,19 +23,19 @@ class Lumobok extends React.Component {
         });
     }
 
-    _onReady(event) {
-        // access to player in all event handlers via event.target
-        event.target.pauseVideo();
-    }
+    // _onReady(event) {
+    //     // access to player in all event handlers via event.target
+    //     event.target.pauseVideo();
+    // }
     
     render () {
-        const opts = {
-            height: '400vh',
-            width: '100%',
-            playerVars: { // https://developers.google.com/youtube/player_parameters
-              autoplay: 1
-            }
-        };
+        // const opts = {
+        //     height: '400vh',
+        //     width: '100%',
+        //     playerVars: { // https://developers.google.com/youtube/player_parameters
+        //       autoplay: 1
+        //     }
+        // };
 
         return (
             <div className="content-project">
@@ -103,13 +103,13 @@ class Lumobok extends React.Component {
                         </p>
                     </Col>
                 </Row> */}
-                <div className="project-video">
+                {/* <div className="project-video">
                     <YouTube
                         videoId="wGMuoyQ7sis"
                         opts={opts}
                         onReady={this._onReady}
                     />
-                </div>
+                </div> */}
 
                 {/* Image Modal */}
                 <ImageModal 
